@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.unordered {
+    list-style-type: none;
+    overflow: hidden;
+    background: #dad5d5;
+    position: sticky;
+    top: 0;
+}
+
+.unordered li {
+    float: left;
+}
+
+.unordered li a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: medium;
+}
+
+.unordered li:last-child {
+    float: right;
+}
+
+.unordered li a:hover:not(.active) {
+    border-bottom: 3px solid white;
+    color: #fff;
+    background-color: #000;
+}
+
+
+h1 {
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+
+@media screen and (max-width:768px) {
+    .unordered li {
+        float: none;
+    }
+
+    .unordered li:last-child {
+        float: none;
+    }
+
+    .unordered li:first-child {
+        display: none;
+    }
+}
+
+/* Adding Quotes Images */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+}
+
+@media screen and (max-width:768px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.fotter{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    
+}
+.fotter a{
+    text-decoration: none;
+}
+
+.fotter{
+    background-color:rgb(115, 109, 109);
+    padding: 10px 14px;;
+}
